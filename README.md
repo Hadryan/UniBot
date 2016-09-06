@@ -1,14 +1,14 @@
 # About the tool
 More info here: http://mikisoft.me/programs/unibot
 
-**Original author's note for the main repository: The project is abandoned so it's highly unlikely that I'll be doing further work on it. Also, mind that pull requests will be automatically rejected, so please fork before doing any modifications to it!**
+**Original author's note for the main repository: The project is abandoned so it's highly unlikely that I'll be doing further work on it. Also, mind that pull requests will be automatically rejected!**
 
 # Differences between v1.4 and this version
 - fixed **a ton** of bugs
 - added **index manager**
 - added in _Post field_ **DELETE** (-), **HEAD** (@) and **PUT** (\<file.ext>) support
 - added **Minimize to tray** and **Always on top** options in _EXE bot_
-- added new functions:
+- added new functions (dependent commands):
   - **dech()** - decode _HTML entities_
   - **num()** - convert and treat string as numeric value
   - **b64d()** - _Base64_ decode
