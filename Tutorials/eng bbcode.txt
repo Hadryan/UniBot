@@ -46,7 +46,7 @@ We'll begin with the facts:
 
 If you understand this then we go into analysis of a string that contains one command: [code]'Hey!'+rpl('Hello, world!','world','Miki')[/code] Now let's analyze its parts:
 
-[i]'Hey!'[/i] - everything that is under a [b]single apostrophe[/b] represents a constant, and this constant is located at the beginning of the string so that will be the first thing printed into it
+[i]'Hey!'[/i] - everything that is under a [b]single quotes[/b] represents a constant, and this constant is located at the beginning of the string so that will be the first thing printed into it
 
 + - character for merging a command with a constant, or with an another command
 
@@ -83,9 +83,9 @@ In the place of this command will be the user input, which usage is equivalent t
 [i][color=#80BF40]String options:[/color][/i]
 After defining the string, the button next to it ("...") will be enabled which represent the options for that string. Click on it to get the following little window, where we choose which options will be used:
 [img]http://i.imgur.com/wQuf3Ao.png[/img]
-[b][u]Crucial[/u][/b] - it is important for the continuation of the process
+[b][u]Crucial[/u][/b] - it is important for the continuation of the process, which means the execution won't continue if the result of it is blank
 [b][u]Public[/u][/b] - it is available in the other indexes for modification and usage
-[b][u]Array[/u][/b] - after processing the string, if more than one result occurs (when using [i]regex[/i] or [i]input[/i]), this option applies the template to each of them separately (by making [i]sub-threads[/i]), but if the option is disabled then only the first result is used
+[b][u]Array[/u][/b] - after processing the string, if more than one result occurs (when using [i]regex[/i] or [i]input[/i]), this option applies the template to each of them separately (by making [i]sub-threads[/i]); if this option is disabled and there is more than one result, then only the first will be used
 [b][u]Output[/u][/b] - this is the option that will show the string results in the main window
 
 [size=x-large][i][color=#00BFFF]--- If clauses ---[/color][/i][/size]
