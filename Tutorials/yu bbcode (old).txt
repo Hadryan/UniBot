@@ -1,7 +1,7 @@
-﻿Ne znam kako drugačije da počnem, pa ću početi sa često postavljenim pitanjima u vezi ove alatke:
+Ne znam kako drugačije da počnem, pa ću početi sa često postavljenim pitanjima u vezi ove alatke:
 
 [b]Šta je UniBot?[/b]
-- UniBot je jedinstven program koji služi za laku i brzu izradu onlajn botova, bez znanja nekog programskog jezika i bez ikakvih muka oko dizajniranja korisničkog interfejsa. Program možete naći ovde: https://www.ljuska.org/viewtopic.php?t=18194
+- UniBot je jedinstven program koji služi za laku i brzu izradu onlajn botova, bez znanja nekog programskog jezika i bez ikakvih muka oko dizajniranja korisničkog interfejsa. Program možete naći ovde: https://ljuska.org/viewtopic.php?f=99&t=18199
 
 [b]Za šta se konkretno koristi?[/b]
 - Možete da napravite sve što vam padne na pamet, ali su to uglavnom neki jednostavniji botovi za koje se ne bi latili rada u nekom programerskom alatu (IDEu).
@@ -23,7 +23,7 @@ Kao što ste videli ako ste već skinuli i pokrenuli program, interfejs možda i
 [b][u]indeks[/u][/b] - svaki indeks sadrži jedan HTTP zahtev ([i]GET[/i] ili [i]POST[/i]) ili rešavanje logičkih iskaza ([i]If-Then[/i])
 [b][u]promenljive[/u][/b] - tu su zapravo smešteni podaci koji se vade pre ili nakon izvršenja zahteva, u zavisnosti od toga gde se tačno upotrebljavaju (na ovo ću se posebno zadržati kasnije pošto je veoma bitno da se zna)
 [b][u]If klauzule[/u][/b] - mesto za testiranje promenljivih da li ispunjavaju određene uslove, i na osnovu toga se odlučuje šta dalje raditi (odnosno na koji sledeći indeks ići ili pak zaustaviti izvršavanje procesa)
-[b][u]rezultati[/u][/b] - prostor gde se prikazuju rezultati promenljivih (ako je to uključeno u njihovim opcijama)
+[b][u]rezultati[/u][/b] - prostor gde se prikazuju rezultati promenljivih (ako je to precizirano u njihovim opcijama)
 
 [size=180][i][color=#00BFFF]--- Indeksi ---[/color][/i][/size]
 
@@ -42,9 +42,9 @@ Krenućemo od činjenica:
 - većina promenljiva je bitna za dalje funkcionisanje procesa
 - izvršavaju se u zavisnosti od toga gde su upotrebljene - [b]pre[/b] ili [b]posle[/b] slanja zahteva
 - upotrebljavaju se tako što se upiše [b]%ime%[/b] (gde je "ime" naziv za promenljivu) na mestu gde je to predviđeno
-- promenljive se neće izvršiti ako nisu javne (Public) i ako ne postoji mesto u indeksu gde su upotrebljene[/i]
+- promenljive se neće izvršiti ako nisu javne (Public) i pritom ako ne postoji mesto u indeksu gde su upotrebljene[/i]
 
-Ako ste ovo shvatili onda idemo dalje - u analizu date promenljive koja u sebi sadrži jednu komandu: [code]'Hej!'+rpl('Dobar dan, svete!','svete','Miki')[/code] Sada ćemo je raščlaniti na njene delove:
+Ako ste ovo shvatili onda idemo dalje - u analizu date promenljive koja u sebi sadrži jednu komandu: [code]'Hej!'+rpl('Dobar dan, svete!','svete','Miki')[/code] Sada ćemo je rasčlaniti na njene delove:
 
 [i]'Hej!'[/i] - sve što je pod [b]običnim apostrofom[/b] predstavlja konstantu, a pošto se nalazi na početku ovo će se prvo ispisati u promenljivoj
 
@@ -126,10 +126,10 @@ file
 Content-Disposition: form-data; name="ImageFile"; filename="slika.jpg"
 Content-Type: image/jpeg
 
-ÿØÿà(...)[/code] Za ovaj zahtev iznad, ovo unosimo u [i]Post[/i] polju: [code]['DataType':'file';'ImageFile':<slika.jpg>][/code]
+ÿØÿà(...)[/code] Za ovaj zahtev iznad, ovo unosimo u [i]Post[/i] polju: [code]['DataType':'file';'ImageFile':<slika.jpg>][/code] 
 [i][color=#80BF40]Konstruktor promenljivih:[/color][/i]
 [img]http://i.imgur.com/S3XxGTD.png[/img]
-U polju za unos komandi promenljivih (ako nije prazno onda ispred svega) unesite [b][build][/b] i lupite Enter.
+U polju za unos komandi promenljivih unesite (ako nije prazno onda ispred svega) [b][build][/b] i lupite Enter.
 
 [size=180][i][color=#00BFFF]--- Kraj ---[/color][/i][/size]
 
